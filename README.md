@@ -20,6 +20,7 @@
 
 - Regression
     - 전복 연령 예측(Predicting the age of abalone)
+      
         - 주제
             - Kaggle에서 제공하는 전복 데이터를 활용해 전복의 나이 예측을 진행
             - 해당 예측을 통해 시장 가치를 가진 전복 평가
