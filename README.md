@@ -1,7 +1,7 @@
 # Team_Kaggle_Competition
 
 - Classification
-    - 은행 이탈 고객 예측(Bank Customer Churn Prediction)
+    - **은행 이탈 고객 예측(Bank Customer Churn Prediction)**
         - 주제
             - 은행 이탈 데이터 변수 간 관계 영향 분석 및 시사점 도출
         - 목적
