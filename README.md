@@ -1,7 +1,7 @@
 # Team_Kaggle_Competition
 
 - Classification
-    - **은행 이탈 고객 예측(Bank Customer Churn Prediction)**
+    - **🏦은행 이탈 고객 예측(Bank Customer Churn Prediction)🏦**
       
         - 주제
             - 은행 이탈 데이터 변수 간 관계 영향 분석 및 시사점 도출
@@ -19,7 +19,7 @@
                 - ROC Curve : 0.89286
 
 - Regression
-    - 전복 연령 예측(Predicting the age of abalone)
+    - **🐚전복 연령 예측(Predicting the age of abalone)🐚**
       
         - 주제
             - Kaggle에서 제공하는 전복 데이터를 활용해 전복의 나이 예측을 진행
