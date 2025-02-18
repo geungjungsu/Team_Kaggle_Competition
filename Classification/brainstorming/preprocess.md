@@ -76,7 +76,9 @@
 
 
 
+
 * 시각화 해석
+![image](https://github.com/user-attachments/assets/51fabf79-f86d-4c35-b3fb-073ef23ef924)
 # 은행데이터이고 나름의 다양하고 많은 사람들이 사용하는 데이터이다보니 정규분포의 형태가 나름 다 나타난다
 # Exited 0이 1보다 많음 거의 8:2
 # CreditScore -> low / normal / high, 나름의 정규분포
