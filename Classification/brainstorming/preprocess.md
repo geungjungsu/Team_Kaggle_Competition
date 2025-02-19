@@ -140,38 +140,38 @@
 
 - 2_5.파생변수
 
-- 우리가 생각했을 때 이탈에 영향을 많이 끼칠 것 같은 것
-    - 정수 : CreditScore(신용점수), Age(나이), Tenure(기간), EstimatedSalary(연봉)
-    - 소희 : NumOfProducts(상품수), HasCrCard(카드보유여부),  CreditScore(신용점수), Age(나이), Tenure(기간)
-
-        - 30대의 수가 많다, 나이가 높을수록 연봉이 올라가고 잔고가 많아질텐데 그럼 영향이 당연히 있지않을까
-        - 이 은행이 이미 젋은 사람을 대상으로 한 상품, 서비스를 많이 보유하고 있지 않을까?
-        - 그러면 자연적으로 나이가 상관이 없지 않을까?
-        - Age가 상관이 없다면 이런 생각까지 갈 수 있을 것 같다.
-
-- 우리가 생각했을 때 영향을 많이 끼칠 것 같지않은것
-    - 정수, 소희 : id, CustomerId, Surname, Balance(잔고), Geography(국가), HasCrCard(카드보유여부), IsActiveMember(활성 회원 여부 - 휴면계정)
-        -> Geography : 프랑스의 수가 훨씬 많은게 분석 대상 은행이 프랑스 소유가 아닌가?
-        -> 확인 결과 해당 데이터는 프랑스 은행에서부터 생긴 데이터
-        -> 그럼 아무래도, 프랑스보다는 독일과 스페인의 이탈율이 더 높지않으려나?
-        -> 그렇다면 이탈 결과에 좋은 영향을 줄 수도 있을 가능성이 있을수도 있다.
-
-
-- 영향 많이 끼칠 것 같은것에서 조합 만들기
-- 신용점수(CreditScore), 나이(Age), 기간(Tenure)
-- 연봉(EstimatedSalary), 상품수(NumOfProducts), 카드보유여부(HasCrCard)
-    - 나이대 별 신용점수(CreditScore By Age)
-    - 연령 별 기간 : Tenure By Age
-    - 참여도 : NumOfProducts(1,2,3,4) + HasCrCard(0,1) + IsActveMember(0,1) -> 1, 2, 3, 4, 5, 6 : 낮을수록 적은 참여도
-    - EstimatedSalary 별 (CreditScore * HasCrCard)
-
-- 영향 많이 끼칠 것 같은 것 + 끼칠 것 같지않은 것
-- Id, CustomerId, Surname
-- 정수 : Geography,HasCrCard, IsActiveMember
-- 소희님 : Balance
-    - 잔고 별 신용점수 : CreditScore By Balance | Balance_group
-    - 연령 별 잔고 : Balance By Age
-    - 잔고 별 상품 수 : NumOfProducts By Balance | Balance_group
+    - 우리가 생각했을 때 이탈에 영향을 많이 끼칠 것 같은 것
+        - 정수 : CreditScore(신용점수), Age(나이), Tenure(기간), EstimatedSalary(연봉)
+        - 소희 : NumOfProducts(상품수), HasCrCard(카드보유여부),  CreditScore(신용점수), Age(나이), Tenure(기간)
+    
+            - 30대의 수가 많다, 나이가 높을수록 연봉이 올라가고 잔고가 많아질텐데 그럼 영향이 당연히 있지않을까
+            - 이 은행이 이미 젋은 사람을 대상으로 한 상품, 서비스를 많이 보유하고 있지 않을까?
+            - 그러면 자연적으로 나이가 상관이 없지 않을까?
+            - Age가 상관이 없다면 이런 생각까지 갈 수 있을 것 같다.
+    
+    - 우리가 생각했을 때 영향을 많이 끼칠 것 같지않은것
+        - 정수, 소희 : id, CustomerId, Surname, Balance(잔고), Geography(국가), HasCrCard(카드보유여부), IsActiveMember(활성 회원 여부 - 휴면계정)
+            -> Geography : 프랑스의 수가 훨씬 많은게 분석 대상 은행이 프랑스 소유가 아닌가?
+            -> 확인 결과 해당 데이터는 프랑스 은행에서부터 생긴 데이터
+            -> 그럼 아무래도, 프랑스보다는 독일과 스페인의 이탈율이 더 높지않으려나?
+            -> 그렇다면 이탈 결과에 좋은 영향을 줄 수도 있을 가능성이 있을수도 있다.
+    
+    
+    - 영향 많이 끼칠 것 같은것에서 조합 만들기
+    - 신용점수(CreditScore), 나이(Age), 기간(Tenure)
+    - 연봉(EstimatedSalary), 상품수(NumOfProducts), 카드보유여부(HasCrCard)
+        - 나이대 별 신용점수(CreditScore By Age)
+        - 연령 별 기간 : Tenure By Age
+        - 참여도 : NumOfProducts(1,2,3,4) + HasCrCard(0,1) + IsActveMember(0,1) -> 1, 2, 3, 4, 5, 6 : 낮을수록 적은 참여도
+        - EstimatedSalary 별 (CreditScore * HasCrCard)
+    
+    - 영향 많이 끼칠 것 같은 것 + 끼칠 것 같지않은 것
+    - Id, CustomerId, Surname
+    - 정수 : Geography,HasCrCard, IsActiveMember
+    - 소희님 : Balance
+        - 잔고 별 신용점수 : CreditScore By Balance | Balance_group
+        - 연령 별 잔고 : Balance By Age
+        - 잔고 별 상품 수 : NumOfProducts By Balance | Balance_group
 
 ```
 
